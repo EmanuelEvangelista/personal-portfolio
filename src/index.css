@@ -1,0 +1,71 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Colores base consistentes con tu diseño */
+  color: #1e293b;
+  background-color: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reseteo para que el portfolio ocupe toda la pantalla correctamente */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block; /* Cambiado de flex para evitar problemas con Chakra UI */
+}
+
+/* Enlaces con estilo moderno e índigo */
+a {
+  font-weight: 600;
+  color: #4f46e5; /* Indigo 600 */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #4338ca; /* Indigo 700 */
+}
+
+/* Botones con estilo consistente al de tus formularios */
+button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.6em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Media query para modo oscuro (si decides usarlo) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f1f5f9;
+    background-color: #0f172a; /* Slate 900 */
+  }
+
+  button {
+    background-color: #6366f1;
+  }
+}
