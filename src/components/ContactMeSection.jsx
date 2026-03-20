@@ -56,6 +56,7 @@ const ContactMeSection = () => {
           onOpen("error", "Something went wrong, please try again later.");
         }
       } catch (error) {
+        console.log(error);
         onOpen("error", "Connection error. Please try again.");
       } finally {
         setIsLoading(false);
