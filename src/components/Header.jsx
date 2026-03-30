@@ -12,10 +12,14 @@ const socials = [
   },
   {
     icon: faLinkedin,
-    url: "https://linkedin.com/in/your-profile",
+    url: "https://www.linkedin.com/in/emanuel-evangelista-102b2b292/",
     label: "LinkedIn",
   },
-  { icon: faEnvelope, url: "mailto:hello@example.com", label: "Email" },
+  {
+    icon: faEnvelope,
+    url: "mailto:emanuelevangelista.dev@gmail.com",
+    label: "Email",
+  },
 ];
 
 const Header = () => {

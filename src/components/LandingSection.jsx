@@ -1,20 +1,20 @@
-import React from "react";
 import { Avatar, Heading, Text, VStack, Box } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import perfilImg from "../assets/perfil.png";
 
 const greeting = "Hi, I'm Emanuel!";
-const bio1 = "Fullstack Developer specialized in React & Next.js";
+const bio1 = "Fullstack Developer · Next.js · TypeScript · React";
 const bio2 =
-  "Building scalable enterprise solutions with TypeScript and high-performance forms.";
+  "I build production-grade web apps with real business logic — from contract management platforms to real estate marketplaces.";
 
 const LandingSection = () => (
   <FullScreenSection
+    marginTop="30px"
     justifyContent="center"
     alignItems="center"
-    isDarkBackground={false} // Cambiado a false ya que el fondo es claro
-    backgroundColor="#F8FAFC" // Un blanco grisáceo más moderno
-    color="#1E293B" // Slate 800 para mejor contraste
+    isDarkBackground={false}
+    backgroundColor="#F8FAFC"
+    color="#1E293B"
   >
     <VStack spacing={6} textAlign="center">
       {/* Sección del Avatar y Saludo */}
