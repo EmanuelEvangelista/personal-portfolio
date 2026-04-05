@@ -8,18 +8,19 @@ import nestrlyImg from "../assets/nestrly.jpg";
 import leDomeImg from "../assets/le-dome.jpg";
 import weatherAppImg from "../assets/weather.jpg";
 
+const featuredProject = {
+  title: "ContractAdvisor",
+  description:
+    "Full-stack B2B SaaS for agricultural studios. Role-based access (Admin/Employee), internal per-contract messaging with unread indicators, automated email expiry alerts via Resend, contract reassignment, staff management with soft-delete for audit compliance, search, pagination, and a real-time dashboard. Built with Next.js 16, TypeScript, MongoDB and NextAuth.",
+  imageSrc: contractAdvisorImg,
+  url: "https://contractadvisor.vercel.app/",
+};
+
 const projects = [
-  {
-    title: "ContractAdvisor",
-    description:
-      "Full-stack contract management platform for agricultural studios. Features role-based access, internal messaging per contract, automated expiry email alerts, staff management, and a real-time dashboard.",
-    imageSrc: contractAdvisorImg,
-    url: "https://contractadvisor.vercel.app/",
-  },
   {
     title: "Nestrly",
     description:
-      "Real estate rental platform built with Next.js 14. Implements property search with filters, pagination, Cloudinary image uploads, and MongoDB-backed listings.",
+      "Real estate rental marketplace built with Next.js 16 and TypeScript. Features location-based extended weather forecast per property, owner view counter, search with filters, pagination, and Cloudinary image uploads.",
     imageSrc: nestrlyImg,
     url: "https://nestrly.vercel.app/",
   },
@@ -33,7 +34,7 @@ const projects = [
   {
     title: "WeatherWise",
     description:
-      "Clean weather forecast app built with Vue.js. Fetches real-time data from a public API and displays current conditions and upcoming forecasts.",
+      "Weather forecast app built with Vue.js. Fetches real-time data from a public API and displays current conditions and upcoming forecasts.",
     imageSrc: weatherAppImg,
     url: "https://emanuelevangelista.github.io/weather-app/",
   },
@@ -89,8 +90,19 @@ const ProjectsSection = () => {
           </Text>
         </Box>
 
-        {/* Grid */}
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} width="100%">
+        {/* ContractAdvisor — ancho completo */}
+        <Box mb={8}>
+          <Card
+            key={featuredProject.title}
+            title={featuredProject.title}
+            description={featuredProject.description}
+            imageSrc={featuredProject.imageSrc}
+            url={featuredProject.url}
+          />
+        </Box>
+
+        {/* Resto — grid de 3 */}
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} width="100%">
           {projects.map((project) => (
             <Card
               key={project.title}
