@@ -6,6 +6,7 @@ import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Footer />
         <Alert />
       </main>
+      <Analytics />
     </AlertProvider>
   );
 }
