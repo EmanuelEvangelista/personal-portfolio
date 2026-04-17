@@ -5,7 +5,7 @@ import perfilImg from "../assets/perfil.png";
 const greeting = "Hi, I'm Emanuel";
 const bio1 = "Fullstack Developer · Next.js · TypeScript · React";
 const bio2 =
-  "8+ years in agribusiness finance and pharma logistics taught me how businesses actually work. Now I build the software that solves those problems — production-grade, TypeScript-first, and deployed.";
+  "10+ years in agribusiness finance and pharma logistics taught me how businesses actually work. Now I build the software that solves those problems — production-grade, TypeScript-first, and deployed.";
 
 const LandingSection = () => (
   <FullScreenSection

@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import App from "./App";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 const theme = extendTheme({});
 
@@ -12,5 +15,5 @@ root.render(
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
