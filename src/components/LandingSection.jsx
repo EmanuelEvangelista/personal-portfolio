@@ -1,12 +1,14 @@
 import { Avatar, Heading, Text, VStack, Box } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import perfilImg from "../assets/perfil.png";
+import { Button, HStack, Link } from "@chakra-ui/react";
 
 const greeting = "Hi, I'm Emanuel";
-const bio1 = "Fullstack Developer · Next.js · TypeScript · React";
-const bio2 =
-  "10+ years in agribusiness finance and pharma logistics taught me how businesses actually work. Now I build the software that solves those problems — production-grade, TypeScript-first, and deployed.";
+const bio1 =
+  "Full-Stack Developer · Next.js · TypeScript · React · AI-Powered SaaS";
 
+const bio2 =
+  "Creator of contractadvisor.com.ar — a production-ready AI-powered contract management platform for agribusiness. 10+ years in agribusiness finance and pharma logistics taught me how businesses actually work. Now I build scalable software that solves those operational problems.";
 const LandingSection = () => (
   <FullScreenSection
     marginTop="30px"
@@ -41,6 +43,27 @@ const LandingSection = () => (
         <Text fontSize="xl" color="slate.500" maxW="600px" lineHeight="tall">
           {bio2}
         </Text>
+        <HStack spacing={4} pt={4}>
+          <Button
+            as="a"
+            href="https://contractadvisor.com.ar"
+            target="_blank"
+            colorScheme="purple"
+            size="md"
+          >
+            View ContractAdvisor
+          </Button>
+
+          <Button
+            as="a"
+            href="https://github.com/EmanuelEvangelista"
+            target="_blank"
+            variant="outline"
+            size="md"
+          >
+            GitHub
+          </Button>
+        </HStack>
       </VStack>
 
       {/* Decoración opcional: Una línea sutil */}
